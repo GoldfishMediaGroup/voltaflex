@@ -1,0 +1,45 @@
+.header {
+  margin-top: 27rem;
+  /* .header__inner */
+
+  &__inner {
+    border-radius: 20rem;
+    background-color: $white;
+    padding: 15rem 63rem 19rem;
+  }
+
+  /* .header__logo */
+
+  &__logo {
+    width: 241rem;
+    height: 30rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* .header__nav */
+
+  &__nav {
+    gap: 240rem;
+  }
+
+  /* .header__nav-list */
+
+  &__nav-list {
+    gap: 93rem;
+  }
+
+  /* .header__nav-link */
+
+  &__nav-link {
+  }
+
+  /* .header__btn */
+
+  &__btn {
+    padding: 20rem 40rem;
+  }
+}

@@ -1,0 +1,67 @@
+.conditions {
+  /* .conditions__inner */
+
+  &__inner {
+    padding: 64rem 68rem;
+    border-radius: 40rem;
+    background: $white;
+    gap: 40rem;
+  }
+
+  /* .conditions__head */
+
+  &__head {
+  }
+
+  /* .conditions__title-box */
+
+  &__title-box {
+    gap: 20rem;
+  }
+
+  /* .conditions__btn */
+
+  &__btn {
+    padding: 20rem 58rem;
+  }
+
+  /* .conditions__list */
+
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 531rem;
+    gap: 20rem;
+  }
+
+  /* .conditions__item */
+
+  &__item {
+    padding: 40rem;
+    gap: 24rem;
+    background: $orange-gradient;
+    color: $white;
+    border-radius: 32rem;
+  }
+
+  /* .conditions__billet */
+
+  &__billet {
+    padding: 15rem 34rem;
+    border: 1.5rem solid $white;
+    border-radius: 60rem;
+    width: fit-content;
+  }
+
+  /* .conditions__img */
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

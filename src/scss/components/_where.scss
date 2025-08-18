@@ -1,0 +1,22 @@
+.where {
+  /* .where__inner */
+
+  &__inner {
+    min-height: 643rem;
+    padding: 64rem 68rem;
+    border-radius: 40rem;
+    gap: 60rem;
+    background: url(../../assets/images/bannerBg.webp) no-repeat top/cover, $orange-gradient;
+  }
+
+  /* .where__title */
+
+  &__title {
+    color: $white;
+  }
+
+  /* .where__content */
+
+  &__content {
+  }
+}

@@ -1,0 +1,139 @@
+@import './mixins';
+@import './flexs';
+
+$dark-blue: #001f68;
+$white: #fff;
+$blue-gradient: linear-gradient(163deg, #02b5d3 0%, #3c90c8 100%);
+$orange-gradient: linear-gradient(314deg, #f9a825 0%, #ff3d00 100%);
+$bg: #e3ebf0;
+
+@media (min-width: 768px) {
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+}
+
+body {
+  color: $dark-blue;
+  background: $bg;
+  font-family: 'Diodrum';
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+  &.no-scroll {
+    overflow: hidden !important;
+    touch-action: none !important;
+    width: 100vw;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+
+  // overflow: hidden;
+}
+
+* {
+  // outline:  1px solid red;
+}
+// main
+main {
+  flex-grow: 1;
+  section {
+    margin: 60rem 0;
+
+    &._first {
+      margin: 20rem 0 60rem;
+    }
+  }
+}
+
+.desktop {
+  display: flex;
+  @include small-tablet {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @include small-tablet {
+    display: flex;
+  }
+}
+
+.medium {
+  font-weight: 500 !important;
+}
+.semibold {
+  font-weight: 600 !important;
+}
+.bold {
+  font-weight: 700 !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.cv {
+  align-items: center;
+}
+.sb {
+  justify-content: space-between;
+}
+.dc {
+  flex-direction: column;
+}
+.flex-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+@import './ui/ui';

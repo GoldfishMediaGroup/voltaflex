@@ -1,0 +1,58 @@
+.faq {
+  /* .faq__inner */
+
+  &__inner {
+    padding: 64rem 68rem;
+    border-radius: 40rem;
+    background: $white;
+    gap: 40rem;
+  }
+
+  /* .faq__title */
+
+  &__title {
+  }
+
+  /* .faq__accordion */
+
+  &__accordion {
+    gap: 16rem;
+  }
+
+  /* .faq__item */
+
+  &__item {
+    background: #f2f6f8;
+    padding: 50rem 40rem;
+    border-radius: 20rem;
+    &.isActive {
+      & .faq__plus {
+        & .opacity {
+          rotate: 90deg;
+        }
+      }
+    }
+  }
+
+  /* .faq__head */
+
+  &__head {
+  }
+
+  /* .faq__plus */
+
+  &__plus {
+    & .opacity {
+   transition: rotate 0.3s;
+   transform-origin: center center;
+    }
+  }
+
+  /* .faq__info */
+
+  &__info {
+    margin-top: 50rem;
+    width: 945rem;
+    display: none;
+  }
+}

@@ -1,0 +1,166 @@
+.banner {
+  /* .banner__inner */
+
+  &__inner {
+    padding: 64rem 68rem;
+    border-radius: 40rem;
+    background: url(../../assets/images/bannerBg.webp) no-repeat top/cover, $orange-gradient ;
+  }
+
+  /* .banner__content */
+
+  &__content {
+    gap: 70rem;
+  }
+
+  /* .banner__head */
+
+  &__head {
+    gap: 40rem;
+  }
+
+  /* .banner__title */
+
+  &__title {
+    gap: 20rem;
+  }
+
+  /* .banner__logo */
+
+  &__logo {
+    width: 576rem;
+    height: 72rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* .banner__subtitle */
+
+  &__subtitle {
+    color: $white;
+  }
+
+  /* .banner__btn */
+
+  &__btn {
+    padding: 20rem 128rem;
+  }
+
+  /* .banner__info */
+
+  &__info {
+    border-radius: 17rem;
+    padding: 34rem 40rem;
+    background: $white;
+    width: 650rem;
+  }
+
+  /* .banner__info-list */
+
+  &__info-list {
+    gap: 40rem;
+  }
+
+  /* .banner__info-item */
+
+  &__info-item {
+    gap: 20rem;
+  }
+
+  /* .banner__info-svg */
+
+  &__info-svg {
+    flex-shrink: 0;
+    width: 64rem;
+    height: 64rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* .banner__info-text */
+
+  &__info-text {
+  }
+
+  /* .banner__info-img */
+
+  &__info-img {
+    width: 447rem;
+    height: 458rem;
+    bottom: -53rem;
+    right: -213rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* .banner__img */
+
+  &__img {
+    width: 815rem;
+    height: 779rem;
+    bottom: 0;
+    right: 111rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* .banner__link */
+
+  &__link {
+    bottom: 10rem;
+    right: 65rem;
+    width: 160rem;
+    height: 160rem;
+    border-radius: 50%;
+    background: url(../../assets/images/bannerLinkBefore.svg) no-repeat top/cover;
+    box-shadow: 0 2rem 5rem 0 rgba(97, 97, 97, 0.1), 0 9rem 9rem 0 rgba(97, 97, 97, 0.09), 0 21rem 13rem 0 rgba(97, 97, 97, 0.05),
+      0 37rem 15rem 0 rgba(97, 97, 97, 0.01), 0 58rem 16rem 0 rgba(97, 97, 97, 0);
+    &::before {
+      content: '';
+      width: 146rem;
+      height: 146rem;
+      border-radius: 50%;
+      position: absolute;
+      background: $blue-gradient;
+    }
+  }
+
+  /* .banner__svg-rotate */
+
+  &__svg-rotate {
+    width: 143rem;
+    height: 143rem;
+    z-index: 1;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* .banner__svg-center */
+
+  &__svg-center {
+    width: 81rem;
+    height: 59rem;
+    position: relative;
+    z-index: 1;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
