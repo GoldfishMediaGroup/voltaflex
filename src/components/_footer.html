@@ -48,3 +48,46 @@
 </footer>
 <!-- 
 <div class="fancybox-bg"></div> -->
+<script>
+  window.uteka = window.uteka || {};
+  (window.uteka._host = 'widget.uteka.ru'), (window.uteka._queue = []);
+  window.uteka._loaded = false;
+  window.uteka.onReady = function (callback) {
+    if (window.uteka._loaded) {
+      return callback();
+    }
+
+    window.uteka._queue.push(callback);
+  };
+
+  var script = document.createElement('script');
+  script.src = 'https://cdn.uteka.ru/static/widgets/widget.compiled.js?l=' + Date.now();
+  script.async = true;
+  script.addEventListener('load', function () {
+    window.uteka._loaded = true;
+    window.uteka._queue.forEach(function (callback) {
+      callback();
+    });
+  });
+
+  document.head.appendChild(script);
+
+  window.uteka.onReady(function () {
+    var widget = document.querySelector('.uteka-widget');
+
+    window.uteka.loadWidget(widget, {
+      productIds: [
+        '97317',
+        '97313',
+        '360911',
+        '348600',
+        '348605',
+        '348597',
+        '369981',
+        '348621',
+        '348622'
+        // и так далее...
+      ]
+    });
+  });
+</script>
