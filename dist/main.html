@@ -182,7 +182,27 @@
   <div class="where__inner container flex dc">
     <p class="where__title tl1">Где купить ВольтаФлекс</p>
     <div class="where__content">
-        
+      <div class="uteka-widget">
+        <!-- Шапка виджета -->
+        <div class="uteka-widget-header">
+          <div class="uteka-widget__container">
+            <div class="uteka-widget-header__inner">
+              <!-- Логотип -->
+              <a class="uteka-widget-header__logo" href="https://uteka.ru/" target="_blank">
+                <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
+              </a>
+
+              <!-- Заголовок -->
+              <div class="uteka-widget-header__title"></div>
+
+              <!-- Крестик -->
+              <a href="#" class="uteka-widget-header__close"></a>
+            </div>
+          </div>
+        </div>
+
+        <iframe allow="geolocation"></iframe>
+      </div>
     </div>
   </div>
 </section>
@@ -327,6 +347,49 @@
 </footer>
 <!-- 
 <div class="fancybox-bg"></div> -->
+<script>
+  window.uteka = window.uteka || {};
+  (window.uteka._host = 'widget.uteka.ru'), (window.uteka._queue = []);
+  window.uteka._loaded = false;
+  window.uteka.onReady = function (callback) {
+    if (window.uteka._loaded) {
+      return callback();
+    }
+
+    window.uteka._queue.push(callback);
+  };
+
+  var script = document.createElement('script');
+  script.src = 'https://cdn.uteka.ru/static/widgets/widget.compiled.js?l=' + Date.now();
+  script.async = true;
+  script.addEventListener('load', function () {
+    window.uteka._loaded = true;
+    window.uteka._queue.forEach(function (callback) {
+      callback();
+    });
+  });
+
+  document.head.appendChild(script);
+
+  window.uteka.onReady(function () {
+    var widget = document.querySelector('.uteka-widget');
+
+    window.uteka.loadWidget(widget, {
+      productIds: [
+        '97317',
+        '97313',
+        '360911',
+        '348600',
+        '348605',
+        '348597',
+        '369981',
+        '348621',
+        '348622'
+        // и так далее...
+      ]
+    });
+  });
+</script>
 
     </div>
   </body>

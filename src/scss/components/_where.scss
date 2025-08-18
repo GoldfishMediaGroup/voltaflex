@@ -20,3 +20,62 @@
   &__content {
   }
 }
+.uteka-widget {
+  /* Минимально поддерживаемые размеры виджета: 320x520. */
+  width: 100%;
+  height: 768rem;
+  outline: 1rem solid #e0e0e0;
+  overflow: hidden;
+}
+
+.uteka-widget iframe {
+  border: none;
+  width: 102%;
+  height: calc(100% - 57rem);
+}
+
+.uteka-widget__container {
+  margin: 0 auto;
+  padding: 0 16rem;
+}
+
+.uteka-widget-header {
+  background: #fff;
+  border-bottom: 1rem solid #e0e0e0;
+}
+
+.uteka-widget-header__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 56rem;
+}
+
+.uteka-widget-header__title {
+  background: url('https://widget.uteka.ru/static/img/widgets/title_2@mobile.svg') no-repeat;
+  background-position: center;
+  width: 230rem;
+  height: 24rem;
+}
+
+.uteka-widget-header__logo {
+  height: 16rem;
+}
+
+.uteka-widget-header__logo img {
+  height: 100%;
+}
+
+.uteka-widget-header__close {
+  position: absolute;
+  top: 0;
+  right: -8rem;
+  bottom: 0;
+  z-index: 5;
+  margin: auto;
+  width: 32rem;
+  height: 32rem;
+  background: url('https://widget.uteka.ru/static/img/widgets/close_2.svg') no-repeat center;
+}
