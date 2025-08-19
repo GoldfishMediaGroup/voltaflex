@@ -9,7 +9,7 @@ import popup from '../utils/popup';
 import form from '../utils/form';
 import scroll from '../utils/scroll';
 
-import smoothScroll from '../components/smoothScroll';
+// import smoothScroll from '../components/smoothScroll';
 import bannerCircle from '../components/bannerCircle';
 import faqAccordion from '../components/faqAccordion';
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scroll();
   } catch {}
   try {
-    smoothScroll();
+    // smoothScroll();
   } catch {}
   try {
     bannerCircle();
