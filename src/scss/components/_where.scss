@@ -26,6 +26,7 @@
   height: 768rem;
   outline: 1rem solid #e0e0e0;
   overflow: hidden;
+      border-radius: 40rem;
 }
 
 .uteka-widget iframe {
@@ -54,8 +55,7 @@
 }
 
 .uteka-widget-header__title {
-  background: url('https://widget.uteka.ru/static/img/widgets/title_2@mobile.svg') no-repeat;
-  background-position: center;
+  background: url('https://widget.uteka.ru/static/img/widgets/title_2@mobile.svg') no-repeat center/contain;
   width: 230rem;
   height: 24rem;
 }
