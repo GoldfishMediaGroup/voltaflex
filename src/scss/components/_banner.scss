@@ -4,7 +4,7 @@
   &__inner {
     padding: 64rem 68rem;
     border-radius: 40rem;
-    background: url(../../assets/images/bannerBg.webp) no-repeat top/cover, $orange-gradient ;
+    background: url(./assets/images/bannerBg.webp) no-repeat top/cover, $orange-gradient;
   }
 
   /* .banner__content */
@@ -68,6 +68,19 @@
 
   &__info-item {
     gap: 20rem;
+    position: relative;
+    &:not(:last-of-type) {
+      &::after {
+        position: absolute;
+        content: '';
+        height: 40rem;
+        bottom: 0;
+        transform: translateY(100%);
+        left: 30rem;
+        width: 2rem;
+        border: 1.5px dashed #ff3d00;
+      }
+    }
   }
 
   /* .banner__info-svg */
@@ -124,7 +137,7 @@
     width: 160rem;
     height: 160rem;
     border-radius: 50%;
-    background: url(../../assets/images/bannerLinkBefore.svg) no-repeat top/cover;
+    background: url(./assets/images/bannerLinkBefore.svg) no-repeat top/cover;
     box-shadow: 0 2rem 5rem 0 rgba(97, 97, 97, 0.1), 0 9rem 9rem 0 rgba(97, 97, 97, 0.09), 0 21rem 13rem 0 rgba(97, 97, 97, 0.05),
       0 37rem 15rem 0 rgba(97, 97, 97, 0.01), 0 58rem 16rem 0 rgba(97, 97, 97, 0);
     &::before {
