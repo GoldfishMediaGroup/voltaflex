@@ -2,45 +2,80 @@
   /* .conditions__inner */
 
   &__inner {
-    padding: 64rem 68rem;
+    padding: 60rem 68rem;
     border-radius: 40rem;
     background: $white;
     gap: 40rem;
+    @include small-tablet {
+      border-radius: 12rem;
+      padding: 16rem 8rem 8rem;
+      gap: 20rem;
+    }
   }
 
   /* .conditions__head */
 
   &__head {
+    gap: 20rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
   }
 
   /* .conditions__title-box */
 
   &__title-box {
     gap: 20rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
   }
 
   /* .conditions__btn */
 
   &__btn {
-    padding: 20rem 58rem;
+    padding: 20rem 56rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  /* .conditions__list-wrap */
+
+  &__list-wrap {
+    gap: 20rem;
+    @include small-tablet {
+    }
   }
 
   /* .conditions__list */
 
   &__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 531rem;
     gap: 20rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+    }
   }
 
   /* .conditions__item */
 
   &__item {
-    padding: 40rem;
+    padding: 32rem;
     gap: 24rem;
     background: $orange-gradient;
     color: $white;
     border-radius: 32rem;
+    overflow: hidden;
+    @include small-tablet {
+      min-height: 292rem;
+      border-radius: 24rem;
+      padding: 28rem;
+      gap: 12rem;
+    }
   }
 
   /* .conditions__billet */
@@ -50,6 +85,13 @@
     border: 1.5rem solid $white;
     border-radius: 60rem;
     width: fit-content;
+    line-height: 126%;
+    @include small-tablet {
+      padding: 10rem 20rem;
+      border-radius: 76rem;
+      font-size: 16rem;
+      line-height: 130%;
+    }
   }
 
   /* .conditions__img */
@@ -58,10 +100,33 @@
     width: 100%;
     height: 100%;
     inset: 0;
+    pointer-events: none;
+    @include small-tablet {
+      width: 70%;
+      height: 100%;
+      right: 0;
+      left: auto;
+    }
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @include small-tablet {
+        width: 100%;
+        height: 100%;
+        object-position: bottom right;
+        object-fit: cover;
+      }
     }
+  }
+
+  /* .conditions__disclamer */
+
+  &__disclamer {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 130%;
+    color: #636363;
   }
 }

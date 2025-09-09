@@ -4,6 +4,7 @@ function bannerCircle() {
   gsap.registerPlugin(ScrollTrigger);
 
   const btns = document.querySelectorAll('.banner__link');
+  if (btns.length <= 0) return;
   btns.forEach((btn) => {
     const rotateText = btn.querySelector('.banner__svg-rotate');
     btn.addEventListener('mouseenter', function () {
@@ -27,7 +28,9 @@ function bannerCircle() {
   function setDataAttrModal() {
     if (window.innerWidth < 768) {
       btns.forEach((btn) => {
-        btn.dataset.popup = btn.parentElement.classList.contains('banner__best-btn-box--reestr') ? '#popup__reestr' : '#popup__best';
+        btn.dataset.popup = btn.parentElement.classList.contains('banner__best-btn-box--reestr')
+          ? '#popup__reestr'
+          : '#popup__best';
       });
     } else {
       btns.forEach((btn) => {

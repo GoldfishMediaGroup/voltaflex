@@ -2,9 +2,10 @@
 @import './flexs';
 
 $dark-blue: #001f68;
+$link-blue: #0d1d7c;
 $white: #fff;
 $blue-gradient: linear-gradient(163deg, #02b5d3 0%, #3c90c8 100%);
-$orange-gradient: linear-gradient(314deg, #f9a825 0%, #ff3d00 100%);
+$orange-gradient: linear-gradient(316deg, #fc831d 0%, #fc7313 100%);
 $bg: #e3ebf0;
 
 @media (min-width: 768px) {
@@ -62,10 +63,15 @@ body {
 main {
   flex-grow: 1;
   section {
-    margin: 60rem 0;
-
+    padding: 30rem 0;
+    @include small-tablet {
+      padding: 10rem 0;
+    }
     &._first {
-      margin: 20rem 0 60rem;
+      padding: 20rem 0 30rem;
+      @include small-tablet {
+        padding: 6rem 0 10rem;
+      }
     }
   }
 }

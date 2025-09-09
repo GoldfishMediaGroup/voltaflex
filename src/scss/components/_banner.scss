@@ -2,137 +2,41 @@
   /* .banner__inner */
 
   &__inner {
-    padding: 64rem 68rem;
-    border-radius: 40rem;
-    background: url(./assets/images/bannerBg.webp) no-repeat top/cover, $orange-gradient;
   }
 
   /* .banner__content */
 
   &__content {
-    gap: 70rem;
-  }
-
-  /* .banner__head */
-
-  &__head {
-    gap: 40rem;
-  }
-
-  /* .banner__title */
-
-  &__title {
-    gap: 20rem;
-  }
-
-  /* .banner__logo */
-
-  &__logo {
-    width: 576rem;
-    height: 72rem;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  /* .banner__subtitle */
-
-  &__subtitle {
-    color: $white;
-  }
-
-  /* .banner__btn */
-
-  &__btn {
-    padding: 20rem 128rem;
-  }
-
-  /* .banner__info */
-
-  &__info {
-    border-radius: 17rem;
-    padding: 34rem 40rem;
-    background: $white;
-    width: 650rem;
-  }
-
-  /* .banner__info-list */
-
-  &__info-list {
-    gap: 40rem;
-  }
-
-  /* .banner__info-item */
-
-  &__info-item {
-    gap: 20rem;
-    position: relative;
-    &:not(:last-of-type) {
-      &::after {
-        position: absolute;
-        content: '';
-        height: 40rem;
-        bottom: 0;
-        transform: translateY(100%);
-        left: 30rem;
-        width: 2rem;
-        border: 1.5px dashed #ff3d00;
-      }
-    }
-  }
-
-  /* .banner__info-svg */
-
-  &__info-svg {
-    flex-shrink: 0;
-    width: 64rem;
-    height: 64rem;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  /* .banner__info-text */
-
-  &__info-text {
-  }
-
-  /* .banner__info-img */
-
-  &__info-img {
-    width: 447rem;
-    height: 458rem;
-    bottom: -53rem;
-    right: -213rem;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    @include small-tablet {
+      border-radius: 12rem;
+      padding: 8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20rem;
+      background: $white;
     }
   }
 
   /* .banner__img */
 
   &__img {
-    width: 815rem;
-    height: 779rem;
-    bottom: 0;
-    right: 111rem;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    border-radius: 40rem;
+    width: 100%;
+    height: 785rem;
+    overflow: hidden;
+    @include small-tablet {
+      border-radius: 10rem;
+
+      height: 546rem;
     }
   }
 
   /* .banner__link */
 
   &__link {
-    bottom: 10rem;
+    position: fixed;
+    z-index: 8;
+    bottom: 60rem;
     right: 65rem;
     width: 160rem;
     height: 160rem;
@@ -140,6 +44,7 @@
     background: url(./assets/images/bannerLinkBefore.svg) no-repeat top/cover;
     box-shadow: 0 2rem 5rem 0 rgba(97, 97, 97, 0.1), 0 9rem 9rem 0 rgba(97, 97, 97, 0.09), 0 21rem 13rem 0 rgba(97, 97, 97, 0.05),
       0 37rem 15rem 0 rgba(97, 97, 97, 0.01), 0 58rem 16rem 0 rgba(97, 97, 97, 0);
+    transition: bottom 0.4s;
     &::before {
       content: '';
       width: 146rem;
@@ -147,6 +52,25 @@
       border-radius: 50%;
       position: absolute;
       background: $blue-gradient;
+      @include small-tablet {
+        width: 83rem;
+        height: 83rem;
+      }
+    }
+
+    @include small-tablet {
+      width: 90rem;
+      height: 90rem;
+
+      right: 8rem;
+      bottom: 185rem;
+      &.cookie--hide {
+        bottom: 16rem;
+      }
+
+      &.cookie--hide.near-end {
+        bottom: 100rem;
+      }
     }
   }
 
@@ -161,6 +85,10 @@
       height: 100%;
       object-fit: cover;
     }
+    @include small-tablet {
+      width: 80.5rem;
+      height: 80.5rem;
+    }
   }
 
   /* .banner__svg-center */
@@ -174,6 +102,18 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    @include small-tablet {
+      width: 50.5rem;
+      height: 39.5rem;
+    }
+  }
+
+  &__btn {
+    display: none;
+    @include small-tablet {
+      display: flex;
+      width: 100%;
     }
   }
 }
