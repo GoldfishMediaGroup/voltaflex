@@ -3,16 +3,32 @@
 
   &__inner {
     min-height: 643rem;
-    padding: 64rem 68rem;
+    padding: 60rem 67rem;
     border-radius: 40rem;
-    gap: 60rem;
-    background: url(./assets/images/bannerBg.webp) no-repeat top/cover, $orange-gradient;
+    gap: 40rem;
+    background: url(./assets/images/bannerBg.webp) no-repeat top/cover, linear-gradient(338deg, #f9a825 0%, #ff3d00 100%);
+
+    @include small-tablet {
+      min-height: auto;
+      padding: 14rem 8rem 8rem;
+      gap: 22rem;
+      border-radius: 24rem;
+    }
   }
 
   /* .where__title */
 
   &__title {
     color: $white;
+    & sup {
+      font-size: 46rem;
+      @include small-tablet {
+        font-size: 20rem;
+      }
+    }
+    @include small-tablet {
+      text-align: center;
+    }
   }
 
   /* .where__content */
@@ -23,45 +39,60 @@
 .uteka-widget {
   /* Минимально поддерживаемые размеры виджета: 320x520. */
   width: 100%;
-  height: 768px;
-  outline: 1px solid #e0e0e0;
+  height: 700rem;
+  outline: 1rem solid #e0e0e0;
   border-radius: 40rem;
   overflow: hidden;
+  background: #fff;
+  @media (max-width: 1280px) {
+    height: 750rem;
+  }
+  @media (max-width: 768px) {
+    height: 550rem;
+    border-radius: 18rem;
+
+
+    width: 343rem;
+  }
 }
 
 .uteka-widget iframe {
   border: none;
-  width: 102%;
-  height: calc(100% - 57px);
+  width: 100%;
+  height: calc(100% - 57rem);
+  @media (max-width: 768px) {
+
+
+  }
 }
 
 .uteka-widget__container {
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16rem;
 }
 
 @media (min-width: 600px) {
   .uteka-widget__container {
-    padding: 0 20px;
+    padding: 0 20rem;
   }
 }
 
 @media (min-width: 768px) {
   .uteka-widget__container {
-    padding: 0 40px;
+    padding: 0 40rem;
   }
 }
 
 @media (min-width: 1024px) {
   .uteka-widget__container {
-    padding: 0 44px;
+    padding: 0 44rem;
   }
 }
 
 @media (min-width: 1440px) {
   .uteka-widget__container {
-    padding: 0 60px;
-    max-width: 1440px;
+    padding: 0 60rem;
+    max-width: 1440rem;
   }
 }
 
@@ -76,18 +107,18 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 56px;
+  height: 56rem;
 }
 
 .uteka-widget-header__title {
-  background: url('https://widget.uteka.ru/static/img/widgets/title_2@mobile.svg') no-repeat;
+  background: url('https://widget.uteka.ru/static/img/widgets/title_2@mobile.svg') no-repeat top/contain;
   background-position: center;
-  width: 230px;
-  height: 24px;
+  width: 230rem;
+  height: 24rem;
 }
 
 .uteka-widget-header__logo {
-  height: 16px;
+  height: 16rem;
 }
 
 .uteka-widget-header__logo img {
@@ -97,13 +128,13 @@
 .uteka-widget-header__close {
   position: absolute;
   top: 0;
-  right: -8px;
+  right: -8rem;
   bottom: 0;
   z-index: 5;
   margin: auto;
-  width: 32px;
-  height: 32px;
-  background: url('https://widget.uteka.ru/static/img/widgets/close_2.svg') no-repeat center;
+  width: 32rem;
+  height: 32rem;
+  background: url('https://widget.uteka.ru/static/img/widgets/close_2.svg') no-repeat top/cover;
 }
 
 @media (min-width: 1024px) {
@@ -112,9 +143,9 @@
   }
 
   .uteka-widget-header__title {
-    background-image: url('https://widget.uteka.ru/static/img/widgets/title_2.svg');
-    width: 264px;
-    height: 24px;
+    background-image: url('https://widget.uteka.ru/static/img/widgets/title_2.svg') no-repeat top/cover;
+    width: 264rem;
+    height: 24rem;
   }
 
   .uteka-widget-header__logo {
@@ -123,6 +154,6 @@
     bottom: 0;
     top: 0;
     margin: auto;
-    height: 32px;
+    height: 32rem;
   }
 }

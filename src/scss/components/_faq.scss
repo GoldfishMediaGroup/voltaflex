@@ -2,10 +2,15 @@
   /* .faq__inner */
 
   &__inner {
-    padding: 64rem 68rem;
+    padding: 60rem 66rem;
     border-radius: 40rem;
     background: $white;
     gap: 40rem;
+    @include small-tablet {
+      border-radius: 12px;
+      padding: 16px 8px 8px;
+      gap: 20rem;
+    }
   }
 
   /* .faq__title */
@@ -17,13 +22,16 @@
 
   &__accordion {
     gap: 16rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
   }
 
   /* .faq__item */
 
   &__item {
     background: #f2f6f8;
-    padding: 50rem 40rem;
+    padding: 46rem 40rem;
     border-radius: 20rem;
     cursor: pointer;
     &.isActive {
@@ -33,19 +41,41 @@
         }
       }
     }
+
+    @include small-tablet {
+      border-radius: 12px;
+      padding: 12px;
+    }
   }
 
   /* .faq__head */
 
   &__head {
+    @include small-tablet {
+      & .txt24 {
+        font-size: 20rem;
+        width: 265rem;
+      }
+    }
   }
 
   /* .faq__plus */
 
   &__plus {
+    width: 32rem;
+    height: 32rem;
+    @include small-tablet {
+      width: 24rem;
+      height: 24rem;
+    }
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     & .opacity {
-   transition: rotate 0.3s;
-   transform-origin: center center;
+      transition: rotate 0.3s;
+      transform-origin: center center;
     }
   }
 
@@ -55,5 +85,9 @@
     margin-top: 50rem;
     width: 945rem;
     display: none;
+    @include small-tablet {
+      width: 100%;
+      margin-top: 24rem;
+    }
   }
 }

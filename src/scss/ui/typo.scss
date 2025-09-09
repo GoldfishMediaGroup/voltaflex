@@ -2,6 +2,9 @@
   font-weight: 500;
   font-size: 72rem;
   line-height: 110%;
+  @include small-tablet {
+    font-size: 32rem;
+  }
 }
 .tl2 {
   font-weight: 500;
@@ -12,6 +15,9 @@
   font-weight: 500;
   font-size: 32rem;
   line-height: 110%;
+  @include small-tablet {
+    font-size: 24rem;
+  }
 }
 .tl4 {
   font-weight: 600;
@@ -22,6 +28,9 @@
 .txt28 {
   font-weight: 500;
   font-size: 28rem;
+  @include small-tablet {
+    font-size: 18rem;
+  }
 }
 .txt26 {
   font-weight: 500;
@@ -32,16 +41,25 @@
   font-weight: 500;
   font-size: 24rem;
   line-height: 150%;
+  @include small-tablet {
+    font-size: 12rem;
+  }
 }
 .txt22 {
   font-weight: 600;
   font-size: 22rem;
   line-height: 130%;
+  @include small-tablet {
+    font-size: 18rem;
+  }
 }
 .txt20 {
   font-weight: 600;
   font-size: 20rem;
   line-height: 130%;
+  @include small-tablet {
+    font-size: 16rem;
+  }
 }
 .txt18 {
   font-weight: 500;
@@ -60,4 +78,14 @@
   text-align: center;
   color: #001f68;
   opacity: 0.1;
+  @include small-tablet {
+    opacity: 1;
+    width: 100%;
+    height: 48rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

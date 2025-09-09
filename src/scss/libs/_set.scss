@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  
 }
 html {
   --w: 1920;
@@ -28,7 +29,6 @@ body {
 }
 iframe {
   pointer-events: fill !important;
-
 }
 input,
 textarea {
@@ -78,7 +78,8 @@ p {
   margin-bottom: 0;
 }
 
-img {
+img,
+picture {
   width: 100%;
   height: auto;
   display: block;
@@ -131,7 +132,7 @@ sup {
 @media (max-width: 64em) {
   html {
     // font-size: calc((100 / 768) * 10vw); // где 768 это ширина моб версии макета
-        // --w: 768;
+    // --w: 768;
     // -webkit-text-size-adjust: none;
   }
 
@@ -141,12 +142,12 @@ sup {
   }
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 48em) {
   html {
     // font-size: 5px;
     // font-size: 1.5625vw;
     // font-size: calc((100 / 375) * 5vw); // где 375 это ширина моб версии макета
-    // --w: 375;
+    --w: 375;
     -webkit-text-size-adjust: none;
   }
 
@@ -155,7 +156,7 @@ sup {
   }
 
   .container {
-    // padding: 0 16rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
-    // width: 100%;
+    padding: 0 8rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+    width: 100%;
   }
 }

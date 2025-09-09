@@ -8,24 +8,35 @@
   <body>
     <div class="wrapper entrance">
       <header class="header" id="header">
-  <div class="header__inner container flex cv sb">
-    <a href="#" class="header__logo">
-      <img src="./assets/images/headerLogo.svg" alt="">
-    </a>
-    <nav class="header__nav flex cv">
-      <ul class="header__nav-list flex cv">
-        <li>
-          <a href="#" class="header__nav-link txt20 medium">Условия участия</a>
-        </li>
-        <li>
-          <a href="#" class="header__nav-link txt20 medium">Регистрация чека</a>
-        </li>
-        <li>
-          <a href="#" class="header__nav-link txt20 medium">Вопрос-ответ</a>
-        </li>
-      </ul>
-      <a href="" class="header__btn blue-btn txt22">Участвовать в акции</a>
-    </nav>
+  <div class="container">
+    <div class="header__inner flex cv sb">
+      <a href="#" class="header__logo">
+        <img src="./assets/images/headerLogo.svg" alt="">
+      </a>
+      <nav class="header__nav flex cv">
+        <ul class="header__nav-list flex cv">
+          <li>
+            <a href="#conditions" class="header__nav-link nav-link txt20 medium">Условия участия</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link nav-link txt20 medium">Регистрация чека</a>
+          </li>
+          <li>
+            <a href="#faq" class="header__nav-link nav-link txt20 medium">Вопрос-ответ</a>
+          </li>
+        </ul>
+        <a href="" class="header__btn blue-btn txt22">Участвовать в акции</a>
+      </nav>
+
+      <div class="header__burger ">
+        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="scale" d="M1.24219 1H18.2422" stroke="#011F68" stroke-width="1.5" stroke-linecap="round"></path>
+          <path class="left" d="M1.24219 8H18.2422" stroke="#011F68" stroke-width="1.5" stroke-linecap="round"></path>
+          <path class="right" d="M1.24219 8H18.2422" stroke="#011F68" stroke-width="1.5" stroke-linecap="round"></path>
+          <path class="scale" d="M1.24219 15H18.2422" stroke="#011F68" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -34,46 +45,18 @@
       <main>
         <section class="banner _first">
   <div class="banner__inner container relative">
-    <div class="banner__content flex dc">
-      <div class="banner__head flex dc">
-        <div class="banner__title flex dc">
-          <div class="banner__logo">
-            <img src="./assets/images/logoBanner.svg" alt="">
-          </div>
-          <p class="banner__subtitle tl2">Для здоровья суставов и позвоночника</p>
-        </div>
-        <a href="#" class="banner__btn blue-btn txt22">Получить кэшбэк</a>
+    <div class="banner__content">
+      <div class="banner__img flex dc">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/images/bannerMob.webp" type="image/webp">
+          <img src="./assets/images/bannerDesk.webp" alt="Описание изображения">
+        </picture>
       </div>
-      <div class="banner__info relative">
-        <ul class="banner__info-list flex dc">
-          <li class="banner__info-item flex cv">
-            <div class="banner__info-svg">
-              <img src="./assets/images/bannerSvg1.svg" alt="">
-            </div>
-            <p class="banner__info-text txt24">Купите ВольтаФлекс</p>
-          </li>
-          <li class="banner__info-item flex cv">
-            <div class="banner__info-svg">
-              <img src="./assets/images/bannerSvg2.svg" alt="">
-            </div>
-            <p class="banner__info-text txt24">Отсканируйте чек</p>
-          </li>
-          <li class="banner__info-item flex cv">
-            <div class="banner__info-svg">
-              <img src="./assets/images/bannerSvg3.svg" alt="">
-            </div>
-            <p class="banner__info-text txt24">Получите кэшбэк</p>
-          </li>
-        </ul>
-        <div class="banner__info-img absolute">
-          <img src="./assets/images/banner.webp" alt="">
-        </div>
-      </div>
+
+      <a href="" class="banner__btn blue-btn txt22">Участвовать в акции</a>
     </div>
 
-    <div class="banner__img absolute">
-      <img src="./assets/images/bannerDecor.webp" alt="">
-    </div>
+
     <a href="#" class="banner__link absolute flex-cc">
       <div class="banner__svg-rotate absolute">
         <img src="./assets/images/bannerCircle.svg" alt="">
@@ -85,211 +68,509 @@
   </div>
 </section>
 
-        <section class="conditions">
-  <div class="conditions__inner container flex dc">
-    <div class="conditions__head flex cv sb">
-      <div class="conditions__title-box flex dc">
-        <p class="tl1">Условия участия в акции</p>
-        <p class="txt24">Акция действует с 01.07.2025 по 30.08.2025</p>
+        <section class="conditions" id="conditions">
+  <div class="container">
+    <div class="conditions__inner flex dc">
+      <div class="conditions__head flex cv sb">
+        <div class="conditions__title-box flex dc">
+          <p class="tl1">
+            Условия участия
+            <br class="mobile">
+            в акции
+          </p>
+          <p class="txt24">Акция действует с 15.09.2025 по 28.02.2026</p>
+        </div>
+        <a href="" class="conditions__btn blue-btn txt22" data-da=".conditions__list-wrap,768, 2">Подробные условия акции</a>
       </div>
-      <a href="" class="conditions__btn blue-btn txt22">Подробные условия акции</a>
+      <div class="conditions__list-wrap flex dc">
+        <ul class="conditions__list grid">
+          <li class="conditions__item relative flex dc">
+            <div class="conditions__billet txt24 semibold">Шаг 1</div>
+            <p class="tl3">
+              Купите ВольтаФлекс
+              <br>
+              в любой аптеке
+            </p>
+            <div class="conditions__img absolute">
+              <img src="./assets/images/conditionsImg1.webp" alt="">
+            </div>
+          </li>
+          <li class="conditions__item relative flex dc">
+            <div class="conditions__billet txt24 semibold">Шаг 2</div>
+            <p class="tl3">
+              Введите промокод
+              <br>
+              от&nbsp;вашего друга
+            </p>
+            <div class="conditions__img absolute">
+              <img src="./assets/images/conditionsImg2.webp" alt="">
+            </div>
+          </li>
+          <li class="conditions__item relative flex dc">
+            <div class="conditions__billet txt24 semibold">Шаг 3</div>
+            <p class="tl3">
+              Отсканируйте QR-
+              <br>
+              код чека
+            </p>
+            <div class="conditions__img absolute">
+              <img src="./assets/images/conditionsImg3.webp" alt="">
+            </div>
+          </li>
+          <li class="conditions__item relative flex dc">
+            <div class="conditions__billet txt24 semibold">Шаг 3</div>
+            <p class="tl3">
+              Получите кэшбэк
+              <br>
+              250 рублей*
+            </p>
+            <div class="conditions__img absolute">
+              <img src="./assets/images/conditionsImg4.webp" alt="">
+            </div>
+          </li>
+        </ul>
+        <p class="conditions__disclamer">
+          *Общая сумма кэшбэка на один номер телефона не более 1250 рублей (за покупку 5 единиц продукции).
+          <br>
+          Не принимают участия в акции товары, приобретенные в маркетплейсах «Яндекс Маркет» (ООО «ЯНДЕКС МАРКЕТ»), OZON (ООО
+          «Интернет решения»), Wildberries (ООО «РВБ»), «Мегамаркет» (ООО "МАРКЕТПЛЕЙС")
+        </p>
+      </div>
     </div>
-    <ul class="conditions__list  grid">
-      <li class="conditions__item relative flex dc">
-        <div class="conditions__billet txt24 semibold">Шаг 1</div>
-        <p class="tl3">
-          Купите ВольтаФлекс
-          <br>
-          в любой аптеке
-        </p>
-        <div class="conditions__img absolute">
-          <img src="./assets/images/conditionsImg1.webp" alt="">
-        </div>
-      </li>
-      <li class="conditions__item relative flex dc">
-        <div class="conditions__billet txt24 semibold">Шаг 2</div>
-        <p class="tl3">
-          Отсканируйте QR-код чека
-          <br>
-          и введите промокод
-        </p>
-        <div class="conditions__img absolute">
-          <img src="./assets/images/conditionsImg2.webp" alt="">
-        </div>
-      </li>
-      <li class="conditions__item relative flex dc">
-        <div class="conditions__billet txt24 semibold">Шаг 3</div>
-        <p class="tl3">
-          Получите кэшбэк
-          <br>
-          до 250 рублей
-        </p>
-        <div class="conditions__img absolute">
-          <img src="./assets/images/conditionsImg3.webp" alt="">
-        </div>
-      </li>
-      
-    </ul>
   </div>
 </section>
 
         <section class="about">
-  <div class="about__inner container flex dc">
-    <div class="about__title">
-      <p class="txt28">
-        <span class="tl3">ВольтаФлекс</span>
-        – флексокинетик
-        <sup>1</sup>
-        с уникальной формулой2 неденатурированного коллагена UC-II3, витамина С и микроэлементов.&nbsp;Более 20 лет разработок&nbsp; и 10
-        клинических исследований научно доказали действие коллагена II типа UC-II3 производства Лонза. ​&nbsp;
-      </p>
-    </div>
-    <div class="about__content relative">
-      <ul class="about__list grid">
-        <li class="about__item flex cv">
-          <div class="about__svg">
-            <img src="./assets/images/aboutSvg1.svg" alt="">
+  <div class="container">
+    <div class="about__inner flex dc">
+      <div class="about__title">
+        <p class="txt28">
+          <span class="tl3">ВольтаФлекс</span>
+          – флексокинетик<sup>1</sup>
+          с уникальной формулой<sup>2</sup>
+          неденатурированного коллагена UC-II <sup>3</sup>, витамина С и микроэлементов.&nbsp;Более 20 лет разработок&nbsp; и 10 клинических
+          исследований<sup>5</sup>
+          научно доказали действие коллагена II типа <br class="mobile"> UC-II(R)<sup>3</sup>
+          производства Лонза. ​&nbsp;
+        </p>
+      </div>
+      <div class="about__content relative">
+        <div class="about__list-wrap flex dc">
+          <p class="txt26">Благодаря коллагену II типа UC-II(R) ВольтаФлекс способствует:</p>
+
+          <ul class="about__list grid">
+            <li class="about__item flex cv">
+              <div class="about__svg">
+                <img src="./assets/images/aboutSvg1.svg" alt="">
+              </div>
+              <p class="txt26">Улучшению двигательной активности и выносливости</p>
+            </li>
+            <li class="about__item flex cv">
+              <div class="about__svg">
+                <img src="./assets/images/aboutSvg2.svg" alt="">
+              </div>
+              <p class="txt26">Выработке собственного коллагена II типа</p>
+            </li>
+            <li class="about__item flex cv">
+              <div class="about__svg">
+                <img src="./assets/images/aboutSvg3.svg" alt="">
+              </div>
+              <p class="txt26">Предотвращению разрушения хряща всех суставов</p>
+            </li>
+            <li class="about__item flex cv">
+              <div class="about__svg">
+                <img src="./assets/images/aboutSvg4.svg" alt="">
+              </div>
+              <p class="txt26">
+                Уменьшению дискомфорта
+                <br>
+                в суставах
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="about__info-box">
+          <div class="about__img absolute" data-da=".about__title,768, 2">
+            <img src="./assets/images/aboutImg.webp" alt="">
           </div>
-          <p class="txt26">Улучшение двигательной активности и выносливости</p>
-        </li>
-        <li class="about__item flex cv">
-          <div class="about__svg">
-            <img src="./assets/images/aboutSvg2.svg" alt="">
-          </div>
-          <p class="txt26">Выработка собственного коллагена II типа</p>
-        </li>
-        <li class="about__item flex cv">
-          <div class="about__svg">
-            <img src="./assets/images/aboutSvg3.svg" alt="">
-          </div>
-          <p class="txt26">Предотвращение разрушения хряща всех суставов</p>
-        </li>
-        <li class="about__item flex cv">
-          <div class="about__svg">
-            <img src="./assets/images/aboutSvg4.svg" alt="">
-          </div>
-          <p class="txt26">Уменьшение дискомфортав суставах</p>
-        </li>
-      </ul>
-      <div class="about__img absolute">
-        <img src="./assets/images/aboutImg.webp" alt="">
+
+          <a href="#" class="about__btn txt20 semibold blue-btn">Подробнее</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-        <section class="where">
-  <div class="where__inner container flex dc">
-    <p class="where__title tl1">Где купить ВольтаФлекс</p>
-    <div class="where__content">
-      <div class="uteka-widget">
-        <!-- Шапка виджета -->
-        <div class="uteka-widget-header">
-          <div class="uteka-widget__container">
-            <div class="uteka-widget-header__inner">
-              <!-- Логотип -->
-              <a class="uteka-widget-header__logo" href="https://uteka.ru/" target="_blank">
-                <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
-              </a>
+        <section class="where" id="where">
+  <div class="container">
+    <div class="where__inner flex dc">
+      <p class="where__title tl1">
+        Где купить ВольтаФлекс
+        <sup>4</sup>
+      </p>
+      <div class="where__content">
+        <div class="uteka-widget">
+          <!-- Шапка виджета -->
+          <div class="uteka-widget-header">
+            <div class="uteka-widget__container">
+              <div class="uteka-widget-header__inner">
+                <!-- Логотип -->
+                <a class="uteka-widget-header__logo" href="https://uteka.ru/" target="_blank">
+                  <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
+                </a>
 
-              <!-- Заголовок -->
-              <div class="uteka-widget-header__title"></div>
+                <!-- Заголовок -->
+                <div class="uteka-widget-header__title"></div>
+              </div>
             </div>
           </div>
+
+          <iframe allow="geolocation"></iframe>
         </div>
 
-        <iframe allow="geolocation"></iframe>
-      </div>
-
-      <!-- <a href="https://uteka.ru" data-product-ids="213126,213120">
+        <!-- <a href="https://uteka.ru" data-product-ids="213126,213120">
   Купить на Ютеке (или любой другой код или текст)
 </a> -->
+      </div>
     </div>
   </div>
 </section>
 
-        <section class="faq">
-  <div class="faq__inner container flex dc">
-    <p class="faq__title tl1">Вопрос-ответ</p>
-    <div class="faq__accordion flex dc">
-      <div class="faq__item">
-        <div class="faq__head flex cv sb">
-          <p class="txt24">
-            Как принять участие в акции на Вольтафлекс
-            <sup>®</sup>
-            ?
-          </p>
-          <div class="faq__plus">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+        <section class="faq" id="faq">
+  <div class="container">
+    <div class="faq__inner flex dc">
+      <p class="faq__title tl1">Вопрос-ответ</p>
+      <div class="faq__accordion flex dc">
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Кто является организатором акции «Программа ВольтаФлекс»?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Организатором Акции «Программа ВольтаФлекс» является ООО «Чеки из аптеки».</p>
           </div>
         </div>
-        <div class="faq__info">
-          <p class="txt20">
-            Чтобы стать участником акции, приобретите упаковку ВольтаФлекс® в период проведения акции, зарегистрируйте чек на
-            сайте и следуйте инструкциям. За участие вы можете получить подарок или вернуть часть стоимости покупки. Подробные
-            условия акции и сроки указаны в разделе «Подробные условия».
-          </p>
-        </div>
-      </div>
-      <div class="faq__item">
-        <div class="faq__head flex cv sb">
-          <p class="txt24">Сколько раз можно участвовать в акции?</p>
-          <div class="faq__plus">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Сроки (период) проведения акции «Программа ВольтаФлекс»</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">С 15 сентября 2025 года по 28 февраля 2026 года</p>
           </div>
         </div>
-        <div class="faq__info">
-          <p class="txt20">
-            Чтобы стать участником акции, приобретите упаковку ВольтаФлекс® в период проведения акции, зарегистрируйте чек на
-            сайте и следуйте инструкциям. За участие вы можете получить подарок или вернуть часть стоимости покупки. Подробные
-            условия акции и сроки указаны в разделе «Подробные условия».
-          </p>
-        </div>
-      </div>
-      <div class="faq__item">
-        <div class="faq__head flex cv sb">
-          <p class="txt24">Как узнать, что моя регистрация прошла успешно?</p>
-          <div class="faq__plus">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Какая продукция принимает участие в Акции «Программа ВольтаФлекс»?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              В акции «Программа ВольтаФлекс» принимает участие «ВольтаФлекс с коллагеном II типа для суставов таблетки, 30 шт».
+            </p>
           </div>
         </div>
-        <div class="faq__info">
-          <p class="txt20">
-            Чтобы стать участником акции, приобретите упаковку ВольтаФлекс® в период проведения акции, зарегистрируйте чек на
-            сайте и следуйте инструкциям. За участие вы можете получить подарок или вернуть часть стоимости покупки. Подробные
-            условия акции и сроки указаны в разделе «Подробные условия».
-          </p>
-        </div>
-      </div>
-      <div class="faq__item">
-        <div class="faq__head flex cv sb">
-          <p class="txt24">
-            Как принять участие в акции на Вольтафлекс
-            <sup>®</sup>
-            ?
-          </p>
-          <div class="faq__plus">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Что такое кэшбэк?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              <span class="semibold">Кэшбэк</span>
+              — это часть стоимости товара, которая возвращается покупателю после покупки, регистрации чека в мобильном приложении
+              и автоматической проверки данного чека.
+              <br>
+              Другими словами,
+              <span class="semibold">кэшбэк</span>
+              - это отложенная скидка.
+              <br>
+              Кэшбэк может быть как фиксированным в рублях, так и в виде процента от стоимости товара в чеке.
+            </p>
           </div>
         </div>
-        <div class="faq__info">
-          <p class="txt20">
-            Чтобы стать участником акции, приобретите упаковку ВольтаФлекс® в период проведения акции, зарегистрируйте чек на
-            сайте и следуйте инструкциям. За участие вы можете получить подарок или вернуть часть стоимости покупки. Подробные
-            условия акции и сроки указаны в разделе «Подробные условия».
-          </p>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Что нужно, чтобы получить кэшбэк?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              А) Купить в период действия акции «Программа ВольтаФлекс» любое количество продукта «ВольтаФлекс с коллагеном II
+              типа для суставов таблетки, 30 шт» в любой аптечной сети, кроме маркетплейсов
+              <br>
+              Б) Выбрать желаемый вариант получения кэшбэка
+              <br>
+              Б) Зарегистрироваться на сайте по номеру телефона
+              <br>
+              В) Убедиться, что промокод, полученный от реферала, введен в соответствующее поле
+              <br>
+              Г) Загрузить чек с приобретенным продуктом «ВольтаФлекс» любым удобным способом
+
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Кто может принимать участие в Акции «Программа ВольтаФлекс»?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              В Акции «Программа ВольтаФлекс» могут принять участие дееспособные, совершеннолетние граждане Российской Федерации,
+              постоянно проживающие на территории Российской Федерации, имеющие номер мобильного телефона, зарегистрированный на
+              территории субъектов РФ.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Где я могу купить «ВольтаФлекс»?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Купить «ВольтаФлекс с коллагеном II типа для суставов таблетки, 30 шт» можно в любой аптечной сети
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Существует ли ограничение на получение кэшбэка по акции «Программа ВольтаФлекс»?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Да, за весь период акции «Программа ВольтаФлекс» можно получить кэшбэк максимум за 5 (пять) купленных продуктов
+              «ВольтаФлекс», то есть максимальная сумма кэшбэка за весь период акции «Программа ВольтаФлекс» составляет 1250 (одна
+              тысяча двести пятьдесят) рублей.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Куда я могу вывести кэшбэк?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Кэшбэк можно вывести на счет банковской карты или пополнением счета мобильного телефона.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Что нужно для регистрации в акции «Программа ВольтаФлекс»?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Регистрация в акции «Программа ВольтаФлекс» осуществляется путем валидации по номеру мобильного телефона. Для этого
+              в форме регистрации вводится номер мобильного телефона с последующей отправкой на указанный номер временного
+              цифрового кода, который необходимо указать в соответствующей форме на сайте для успешного прохождения регистрации в
+              акции «Программа ВольтаФлекс».
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Нужна ли повторная регистрация при каждой загрузке чека?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Нет, повторная регистрация не требуется. В случае, если вы не авторизованы в системе, авторизация осуществляется так
+              же – путем получения временного цифрового кода на номер мобильного телефона и последующего ввода в соответствующее
+              поле.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Где я могу взять промокод для получения кэшбэка?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Промокод на получение кэшбэка на покупку «ВольтаФлекс» можно получить у реферала, сотрудника компании АО «Хелеон
+              Рус».
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Могу ли я участвовать в Акции «Программа ВольтаФлекс» без промокода?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Нет, зарегистрировать чек можно только после ввода промокода, полученного от реферала.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Как я могу загрузить чек?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Для начала необходимо открыть виджет, нажав на кнопку «Участвовать в акции» или круглую кнопку «Регистрация чека»
+              для запуска виджета загрузки чека.
+              <br>
+              Зарегистрировать чек с покупкой «ВольтаФлекс» возможно тремя способами:
+              <br>
+              1) отсканировав QR-код, указанный на чеке, с вашего смартфона;
+              <br>
+              2) загрузив фото чека;
+              <br>
+              3) введя вручную фискальные данные чека: ФН, ФД, ФП/ФПД, точную сумму покупки в рублях и копейках, дату продажи,
+              время совершения покупки.
+
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Как быстро я должен загрузить чек?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Чек необходимо отсканировать в течение 72 часов с момента покупки товара.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Существует ли ограничение по активированным промокодам?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Нет, можно активировать неограниченное количество полученных промокодов</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Могу ли я зарегистрировать чек на покупку в маркетплейсе?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Нет, в акции «Программа ВольтаФлекс» участвуют только чеки на покупку в аптечных сетях.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">Как скоро я могу получить кэшбэк после регистрации чека?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">Как правило, кэшбэк начисляется в течение 3-х рабочих дней.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__head flex cv sb">
+            <p class="txt24">У меня не получается зарегистрироваться или зарегистрировать чек. Что делать?</p>
+            <div class="faq__plus">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="opacity" d="M16 1.23438V30.9487" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.14258 16H30.8569" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq__info">
+            <p class="txt20 medium">
+              Убедитесь, что в точном прохождении шагов. В случае, если это не помогло, напишите нам в Telegram-бот (ссылка в
+              виджете) или на электронную почту
+              <a href="mailto:support@flexopromo.ru." class="semibold">support@flexopromo.ru.</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -297,55 +578,77 @@
 </section>
 
       </main>
-
       <footer class="footer">
-  <div class="footer__inner container flex dc">
-    <ul class="footer__bibliography txt16 italic flex dc">
-      <li>
-        1. Флексокинетик — Флексо от лат. "flexus" улучшение гибкости суставов; Кинетик от греч. "κίνησις" (kinesis) улучшение
-        двигательной активности
-      </li>
-      <li>2. С уникальной формулой — на российском рынке внутри портфеля Haleon</li>
-      <li>3. UC-II — Товарный знак UC-II® принадлежит Лонза.</li>
-      <li>СГР AM.01.20.01.003.R.000155.03.25</li>
-    </ul>
+  <div class="container">
+    <div class="footer__inner flex dc">
+      <ul class="footer__bibliography txt16 italic flex dc">
+        <li>
+          1. Флексокинетик — Флексо от лат. "flexus" улучшение гибкости суставов; Кинетик от греч. "κίνησις" (kinesis) улучшение
+          двигательной активности
+        </li>
+        <li>2. С уникальной формулой — на российском рынке внутри портфеля Haleon</li>
+        <li>3. UC-II — Товарный знак UC-II® принадлежит Лонза.</li>
+        <li>
+          4. Не принимают участия в акции товары, приобретенные в маркетплейсах «Яндекс Маркет» (ООО «ЯНДЕКС МАРКЕТ»), OZON (ООО
+          «Интернет решения»), Wildberries (ООО «РВБ»), «Мегамаркет» (ООО "МАРКЕТПЛЕЙС")
+        </li>
+        <li>5. Екушева Е.В. с соавт. Профилактическая медицина.2025;28(4):1–9.</li>
+        <li>СГР AM.01.20.01.003.R.000155.03.25</li>
+      </ul>
 
-    <div class="footer__nav flex cv sb">
-      <a href="" class="footer__logo">
-        <img src="./assets/images/haleonLogo.svg" alt="">
-      </a>
-      <div class="footer__info-box flex cv">
-        <div class="footer__info txt20 medium">
-          АО «Хелеон Рус»
-          <br>
-          РФ, 123317, г. Москва,Пресненская&nbsp;наб., д. 10
-          <br>
-          Электронная почта:
-          <a href="mailto:rus.info@haleon.com">rus.info@haleon.com</a>
+      <div class="footer__nav flex cv sb">
+        <a href="" class="footer__logo">
+          <img src="./assets/images/haleonLogo.svg" alt="">
+        </a>
+        <div class="footer__info-box flex cv">
+          <div class="footer__info txt20 medium">
+            АО «Хелеон Рус»
+            <br>
+            123112, город Москва, Пресненская наб., д.
+            <br>
+            10, помещ. III, комната 9, эт 6
+            <br>
+            Электронная почта:
+            <a href="mailto:rus.info@haleon.com">rus.info@haleon.com</a>
+          </div>
+          <ul class="footer__list grid">
+            <li>
+              <a href="#" class="footer__link txt20 medium">Политика конфиденциальности</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link txt20 medium">Согласие на обработку персональных данных</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link txt20 medium">Правила акции</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link txt20 medium">Пользовательское соглашение</a>
+            </li>
+          </ul>
         </div>
-        <ul class="footer__list grid">
-          <li>
-            <a href="#" class="footer__link txt20 medium">Политика конфиденциальности</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link txt20 medium">Согласие на обработку персональных данных</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link txt20 medium">Правила акции</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link txt20 medium">Пользовательское соглашение</a>
-          </li>
-        </ul>
       </div>
-    </div>
-    <div class="footer__disclaimer disclaimer">
-      БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА.
-      <br>
-      НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ СРЕДСТВОМ
+      <div class="footer__disclaimer disclaimer">
+        <span class="desktop">
+          БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА.
+          <br>
+          НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ СРЕДСТВОМ
+        </span>
+
+        <span class="mobile">
+          <img src="./assets/images/disclaimer.svg" alt="">
+        </span>
+      </div>
     </div>
   </div>
 </footer>
+
+<div class="cookie cookie--show flex dc">
+  <p class="txt20 medium">
+    Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы даете согласие на работу с этими файлами.
+  </p>
+
+  <button class=" cookie__btn txt20 semibold blue-btn">Принять и закрыть</button>
+</div>
 <!-- 
 <div class="fancybox-bg"></div> -->
 <script>
@@ -375,18 +678,15 @@
   window.uteka.onReady(function () {
     var widget = document.querySelector('.uteka-widget');
 
+    // window.uteka.loadWidget(widget, {
+    //   // productIds: [
+    //   //   '431267',
+    //   // ]
+
+    // });
+
     window.uteka.loadWidget(widget, {
-      productIds: [
-        '97317',
-        '97313',
-        '360911',
-        '348600',
-        '348605',
-        '348597',
-        '369981',
-        '348621',
-        '348622'
-      ]
+      productId: '431267'
     });
   });
 </script>
@@ -398,6 +698,7 @@
 
   document.head.appendChild(script)
 </script> -->
+
     </div>
   </body>
 </html>

@@ -12,28 +12,22 @@ import scroll from '../utils/scroll';
 // import smoothScroll from '../components/smoothScroll';
 import bannerCircle from '../components/bannerCircle';
 import faqAccordion from '../components/faqAccordion';
+import headerBurger from '../components/headerBurger';
+import footerCookieDisclamer from '../components/footerCookieDisclamer';
+
+import '../libs/dynamic_adapt';
 
 export const modules = {};
 
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  try {
-    popup();
-  } catch {}
-  try {
-    form();
-  } catch {}
-  try {
-    scroll();
-  } catch {}
-  try {
-    // smoothScroll();
-  } catch {}
-  try {
-    bannerCircle();
-  } catch {}
-  try {
-    faqAccordion();
-  } catch {}
+  popup();
+  form();
+  scroll();
+  // smoothScroll();
+  bannerCircle();
+  faqAccordion();
+  headerBurger();
+  footerCookieDisclamer();
 });

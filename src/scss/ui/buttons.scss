@@ -44,7 +44,9 @@
 
 .blue-btn {
   width: fit-content;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20rem 40rem;
   border-radius: 16rem;
   background: $dark-blue;

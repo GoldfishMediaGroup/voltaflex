@@ -1,51 +1,74 @@
 <footer class="footer">
-  <div class="footer__inner container flex dc">
-    <ul class="footer__bibliography txt16 italic flex dc">
-      <li>
-        1. Флексокинетик — Флексо от лат. "flexus" улучшение гибкости суставов; Кинетик от греч. "κίνησις" (kinesis) улучшение
-        двигательной активности
-      </li>
-      <li>2. С уникальной формулой — на российском рынке внутри портфеля Haleon</li>
-      <li>3. UC-II — Товарный знак UC-II® принадлежит Лонза.</li>
-      <li>СГР AM.01.20.01.003.R.000155.03.25</li>
-    </ul>
+  <div class="container">
+    <div class="footer__inner flex dc">
+      <ul class="footer__bibliography txt16 italic flex dc">
+        <li>
+          1. Флексокинетик — Флексо от лат. "flexus" улучшение гибкости суставов; Кинетик от греч. "κίνησις" (kinesis) улучшение
+          двигательной активности
+        </li>
+        <li>2. С уникальной формулой — на российском рынке внутри портфеля Haleon</li>
+        <li>3. UC-II — Товарный знак UC-II® принадлежит Лонза.</li>
+        <li>
+          4. Не принимают участия в акции товары, приобретенные в маркетплейсах «Яндекс Маркет» (ООО «ЯНДЕКС МАРКЕТ»), OZON (ООО
+          «Интернет решения»), Wildberries (ООО «РВБ»), «Мегамаркет» (ООО "МАРКЕТПЛЕЙС")
+        </li>
+        <li>5. Екушева Е.В. с соавт. Профилактическая медицина.2025;28(4):1–9.</li>
+        <li>СГР AM.01.20.01.003.R.000155.03.25</li>
+      </ul>
 
-    <div class="footer__nav flex cv sb">
-      <a href="" class="footer__logo">
-        <img src="./assets/images/haleonLogo.svg" alt="" />
-      </a>
-      <div class="footer__info-box flex cv">
-        <div class="footer__info txt20 medium">
-          АО «Хелеон Рус»
-          <br />
-          РФ, 123317, г. Москва,Пресненская наб., д. 10
-          <br />
-          Электронная почта:
-          <a href="mailto:rus.info@haleon.com">rus.info@haleon.com</a>
+      <div class="footer__nav flex cv sb">
+        <a href="" class="footer__logo">
+          <img src="./assets/images/haleonLogo.svg" alt="" />
+        </a>
+        <div class="footer__info-box flex cv">
+          <div class="footer__info txt20 medium">
+            АО «Хелеон Рус»
+            <br />
+            123112, город Москва, Пресненская наб., д.
+            <br />
+            10, помещ. III, комната 9, эт 6
+            <br />
+            Электронная почта:
+            <a href="mailto:rus.info@haleon.com">rus.info@haleon.com</a>
+          </div>
+          <ul class="footer__list grid">
+            <li>
+              <a href="#" class="footer__link txt20 medium">Политика конфиденциальности</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link txt20 medium">Согласие на обработку персональных данных</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link txt20 medium">Правила акции</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link txt20 medium">Пользовательское соглашение</a>
+            </li>
+          </ul>
         </div>
-        <ul class="footer__list grid">
-          <li>
-            <a href="#" class="footer__link txt20 medium">Политика конфиденциальности</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link txt20 medium">Согласие на обработку персональных данных</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link txt20 medium">Правила акции</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link txt20 medium">Пользовательское соглашение</a>
-          </li>
-        </ul>
       </div>
-    </div>
-    <div class="footer__disclaimer disclaimer">
-      БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА.
-      <br />
-      НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ СРЕДСТВОМ
+      <div class="footer__disclaimer disclaimer">
+        <span class="desktop">
+          БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА.
+          <br />
+          НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ СРЕДСТВОМ
+        </span>
+
+        <span class="mobile">
+          <img src="./assets/images/disclaimer.svg" alt="" />
+        </span>
+      </div>
     </div>
   </div>
 </footer>
+
+<div class="cookie cookie--show flex dc">
+  <p class="txt20 medium">
+    Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы даете согласие на работу с этими файлами.
+  </p>
+
+  <button class=" cookie__btn txt20 semibold blue-btn">Принять и закрыть</button>
+</div>
 <!-- 
 <div class="fancybox-bg"></div> -->
 <script>
@@ -75,18 +98,15 @@
   window.uteka.onReady(function () {
     var widget = document.querySelector('.uteka-widget');
 
+    // window.uteka.loadWidget(widget, {
+    //   // productIds: [
+    //   //   '431267',
+    //   // ]
+
+    // });
+
     window.uteka.loadWidget(widget, {
-      productIds: [
-        '97317',
-        '97313',
-        '360911',
-        '348600',
-        '348605',
-        '348597',
-        '369981',
-        '348621',
-        '348622'
-      ]
+      productId: '431267'
     });
   });
 </script>
