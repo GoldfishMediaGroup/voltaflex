@@ -28,13 +28,13 @@
   /* .footer__nav */
 
   &__nav {
-    background: url(../../assets/images/footerBg.webp) no-repeat top/cover, linear-gradient(307deg, #f9a223 0%, #fd670e 100%);
+    background: url(./assets/images/footerBg.webp) no-repeat top/cover, linear-gradient(307deg, #f9a223 0%, #fd670e 100%);
     border-radius: 40rem;
     padding: 65rem 68rem;
     color: $white;
 
     @include small-tablet {
-      background: url(../../assets/images/footerBgMob.webp) no-repeat top/cover, linear-gradient(307deg, #f9a223 0%, #fd670e 100%);
+      background: url(./assets/images/footerBgMob.webp) no-repeat top/cover, linear-gradient(307deg, #f9a223 0%, #fd670e 100%);
       border-radius: 24rem 24rem 0 0;
       padding: 32rem 12rem;
       margin: 0 -8rem;
