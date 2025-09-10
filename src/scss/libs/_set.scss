@@ -3,7 +3,6 @@
 *::after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  
 }
 html {
   --w: 1920;
@@ -81,7 +80,8 @@ p {
 img,
 picture {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
