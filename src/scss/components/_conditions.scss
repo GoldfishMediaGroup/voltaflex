@@ -128,5 +128,9 @@
     font-size: 16rem;
     line-height: 130%;
     color: #636363;
+    width: 1050rem;
+    @include small-tablet {
+      width: 100%;
+    }
   }
 }
