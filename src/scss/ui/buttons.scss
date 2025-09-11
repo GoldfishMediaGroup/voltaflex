@@ -50,6 +50,26 @@
   padding: 20rem 40rem;
   border-radius: 16rem;
   background: $dark-blue;
+  border: 2px solid $dark-blue;
   color: $white;
   text-align: center;
+  @include small-tablet {
+    padding: 16rem 40rem;
+  }
+}
+
+.border-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rem 40rem;
+  border-radius: 16rem;
+  background: $white;
+  border: 2px solid $dark-blue;
+  color: $dark-blue;
+  text-align: center;
+    @include small-tablet {
+    padding: 16rem 40rem;
+  }
 }
