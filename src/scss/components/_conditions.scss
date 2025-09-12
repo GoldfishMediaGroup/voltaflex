@@ -129,8 +129,11 @@
     line-height: 130%;
     color: #636363;
     width: 1050rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     @include small-tablet {
-      width: 100%;
+      width: 100%;     font-size: 12rem;
     }
   }
 }

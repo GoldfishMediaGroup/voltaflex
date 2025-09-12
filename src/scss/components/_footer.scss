@@ -32,7 +32,7 @@
   &__nav {
     background: url(./assets/images/footerBg.webp) no-repeat top/cover, linear-gradient(307deg, #f9a223 0%, #fd670e 100%);
     border-radius: 40rem;
-    padding: 65rem 68rem;
+    padding: 24rem 68rem;
     color: $white;
 
     @include small-tablet {
@@ -76,8 +76,14 @@
   /* .footer__info */
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    width: 427rem;
     @include small-tablet {
       font-size: 12rem;
+      width: 100%;
+      gap: 16px;
     }
   }
 
@@ -85,7 +91,7 @@
 
   &__list {
     grid-template-columns: repeat(2, auto);
-    gap: 30rem 100rem;
+    gap: 25rem 100rem;
     @include small-tablet {
       display: flex;
       flex-direction: column;

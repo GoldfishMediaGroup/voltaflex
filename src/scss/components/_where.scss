@@ -3,14 +3,14 @@
 
   &__inner {
     min-height: 643rem;
-    padding: 60rem 67rem;
+    padding: 60rem 67rem 15rem 67rem;
     border-radius: 40rem;
     gap: 40rem;
     background: url(./assets/images/bannerBg.webp) no-repeat top/cover, linear-gradient(338deg, #f9a825 0%, #ff3d00 100%);
 
     @include small-tablet {
       min-height: auto;
-      padding: 14rem 8rem 8rem;
+      padding: 14rem 8rem 10rem;
       gap: 22rem;
       border-radius: 24rem;
     }
@@ -35,6 +35,27 @@
 
   &__content {
   }
+
+  &__content-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+    @include small-tablet {
+      gap: 6rem;
+    }
+  }
+  &__disclaimer {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 130%;
+    color: $white;
+    width: 920rem;
+    @include small-tablet {
+      width: 100%;
+      font-size: 12rem;
+    }
+  }
 }
 .uteka-widget {
   /* Минимально поддерживаемые размеры виджета: 320x520. */
@@ -51,7 +72,6 @@
     height: 550rem;
     border-radius: 18rem;
 
-
     width: 343rem;
   }
 }
@@ -61,8 +81,6 @@
   width: 100%;
   height: calc(100% - 57rem);
   @media (max-width: 768px) {
-
-
   }
 }
 
@@ -157,6 +175,6 @@
     height: 32rem;
   }
 }
-[class$="copyright"] {
+[class$='copyright'] {
   display: none !important;
 }
