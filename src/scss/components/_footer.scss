@@ -18,12 +18,12 @@
     gap: 8rem;
     color: #636363;
     margin-left: 67rem;
-    width: 1050rem;
+
     @include small-tablet {
       margin-left: 0;
 
       font-size: 12rem;
-      width: 100%;
+  
     }
   }
 

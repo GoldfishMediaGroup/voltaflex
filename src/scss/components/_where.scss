@@ -50,9 +50,9 @@
     font-size: 16rem;
     line-height: 130%;
     color: $white;
-    width: 920rem;
+
     @include small-tablet {
-      width: 100%;
+
       font-size: 12rem;
     }
   }
