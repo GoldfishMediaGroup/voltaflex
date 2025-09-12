@@ -118,16 +118,16 @@
           </p>
           <p class="txt24">Акция действует с 15.09.2025 по 28.02.2026</p>
         </div>
-        <a href="" class="conditions__btn blue-btn txt22" data-da=".conditions__list-wrap,768, 2">Подробные условия акции</a>
+        <a href="" class="conditions__btn blue-btn txt22" data-da=".conditions__list-wrap,768, 1">Подробные условия акции</a>
       </div>
-      <div class="conditions__list-wrap flex dc">
+      <div class="conditions__list-wrap flex dc ">
         <ul class="conditions__list grid">
           <li class="conditions__item relative flex dc">
             <div class="conditions__billet txt24 semibold">Шаг 1</div>
             <p class="tl3">
               Купите ВольтаФлекс
               <br>
-              в любой аптеке*
+              в аптеке*
             </p>
             <div class="conditions__img absolute">
               <img src="./assets/images/conditionsImg1.webp" alt="">
@@ -135,11 +135,7 @@
           </li>
           <li class="conditions__item relative flex dc">
             <div class="conditions__billet txt24 semibold">Шаг 2</div>
-            <p class="tl3">
-              Введите промокод
-              <br>
-              от&nbsp;вашего друга
-            </p>
+            <p class="tl3">Введите промокод</p>
             <div class="conditions__img absolute">
               <img src="./assets/images/conditionsImg2.webp" alt="">
             </div>
@@ -167,13 +163,13 @@
             </div>
           </li>
         </ul>
-        <p class="conditions__disclamer">
-          *Не принимают участия в акции товары, приобретенные в маркетплейсах «Яндекс Маркет» (ООО «ЯНДЕКС МАРКЕТ»), OZON (ООО
-          «Интернет решения»), Wildberries (ООО «РВБ»), «Мегамаркет» (ООО "МАРКЕТПЛЕЙС")
-
-          <br>
-          **Общая сумма кэшбэка на один номер телефона не более 1250 рублей (за покупку 5 единиц продукции).
-        </p>
+        <ul class="conditions__disclamer">
+          <li>
+            *Не принимают участия в акции товары, приобретенные в маркетплейсах «Яндекс Маркет» (ООО «ЯНДЕКС МАРКЕТ»), OZON (ООО
+            «Интернет решения»), Wildberries (ООО «РВБ»), «Мегамаркет» (ООО "МАРКЕТПЛЕЙС")
+          </li>
+          <li>**Общая сумма кэшбэка на один номер телефона не более 1250 рублей (за покупку 5 единиц продукции).</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -183,14 +179,15 @@
   <div class="container">
     <div class="about__inner flex dc">
       <div class="about__title">
-        <p class="txt28">
-          <span class="tl3">ВольтаФлекс</span>
+        <p class="txt28 regular">
+     
+
+          <span class="tl3 semibold">ВольтаФлекс</span>
           – флексокинетик<sup>1</sup>
           с уникальной формулой<sup>2</sup>
-          неденатурированного коллагена UC-II <sup>3</sup>, витамина С и микроэлементов.&nbsp;Более 20 лет разработок&nbsp; и 10 клинических
-          исследований<sup>5</sup>
-          научно доказали действие коллагена II типа <br class="mobile"> UC-II(R)<sup>3</sup>
-          производства Лонза. ​&nbsp;
+          неденатурированного коллагена UC-II(R)<sup>3</sup>
+          , витамина С и микроэлементов.&nbsp;Более 20 лет разработок&nbsp; и 10 клинических исследований<sup>5</sup>
+          научно доказали действие коллагена II типа UC-II(R) производства Лонза. ​&nbsp;
         </p>
       </div>
       <div class="about__content relative">
@@ -247,29 +244,38 @@
         Где купить ВольтаФлекс
         <sup>4</sup>
       </p>
-      <div class="where__content">
-        <div class="uteka-widget">
-          <!-- Шапка виджета -->
-          <div class="uteka-widget-header">
-            <div class="uteka-widget__container">
-              <div class="uteka-widget-header__inner">
-                <!-- Логотип -->
-                <a class="uteka-widget-header__logo" data-popup="#popup__attention">
-                  <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
-                </a>
+      <div class="where__content-wrap">
+        <div class="where__content">
+          <div class="uteka-widget">
+            <!-- Шапка виджета -->
+            <div class="uteka-widget-header">
+              <div class="uteka-widget__container">
+                <div class="uteka-widget-header__inner">
+                  <!-- Логотип -->
+                  <a class="uteka-widget-header__logo" data-popup="#popup__attention">
+                    <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
+                  </a>
 
-                <!-- Заголовок -->
-                <div class="uteka-widget-header__title"></div>
+                  <!-- Заголовок -->
+                  <div class="uteka-widget-header__title"></div>
+                </div>
               </div>
             </div>
+
+            <iframe allow="geolocation"></iframe>
           </div>
 
-          <iframe allow="geolocation"></iframe>
-        </div>
-
-        <!-- <a href="https://uteka.ru" data-product-ids="213126,213120">
+          <!-- <a href="https://uteka.ru" data-product-ids="213126,213120">
   Купить на Ютеке (или любой другой код или текст)
 </a> -->
+        </div>
+
+        <ul class="where__disclaimer">
+          <li>
+            В случае перехода на внешний интернет-ресурс, организатор акции не несет ответственности за корректность данных,
+            безопасность и содержание стороннего сайта.
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -641,14 +647,24 @@
         </a>
         <div class="footer__info-box flex cv">
           <div class="footer__info txt20 medium">
-            АО «Хелеон Рус»
-            <br>
-            123112, город Москва, Пресненская наб., д.
-            <br>
-            10, помещ. III, комната 9, эт 6
-            <br>
-            Электронная почта:
-            <a href="mailto:rus.info@haleon.com">rus.info@haleon.com</a>
+            <p>
+              АО «Хелеон Рус»
+              <br>
+              123112, город Москва, Пресненская наб., д. 10,
+              <br>
+              помещ. III, комната 9, эт 6
+            </p>
+            <p>
+              Электронная почта по вопросам продукции:
+              <br>
+              <a href="mailto:rus.info@haleon.com">rus.info@haleon.com</a>
+            </p>
+            <p>
+              Электронная почта по вопросам
+              <br>
+              проведения акции:
+              <a href="mailto:support@flexopromo.ru">support@flexopromo.ru</a>
+            </p>
           </div>
           <ul class="footer__list grid">
             <li>
@@ -666,16 +682,14 @@
           </ul>
         </div>
       </div>
-      <div class="footer__disclaimer disclaimer">
-        <span class="desktop">
-          БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА.
-          <br>
-          НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ СРЕДСТВОМ
-        </span>
+      <div class="footer__disclaimer disclaimer-box">
+        <div class="disclaimer desktop">
+          <img src="./assets/images/disclaimerDesk.svg" alt="">
+        </div>
 
-        <span class="mobile">
+        <div class="disclaimer mobile">
           <img src="./assets/images/disclaimer.svg" alt="">
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -686,7 +700,7 @@
     Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы даете согласие на работу с этими файлами.
   </p>
 
-  <button class=" cookie__btn txt20 semibold blue-btn">Принять и закрыть</button>
+  <button class="cookie__btn txt20 semibold blue-btn">Принять и закрыть</button>
 </div>
 <!-- 
 <div class="fancybox-bg"></div> -->
